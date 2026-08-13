@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+//	int n1, n2, aux;
+	
+	// Exercício 1) 
+	
+//	printf("Digite um numero inteiro: ");
+//	scanf("%d", &n1);
+//	printf("Digite outro numero inteiro: ");
+//	scanf("%d", &n2);
+	
+//	aux = n1; // Trocar valores na memória. Variável auxiliar para não perder o valor. ordenação
+//	n1 = n2; 
+//	n2 = aux;
+	
+	
+//	printf("Os numeros inteiros na ordem inversa e: %d e %d", n1, n2);
+	
+	// Exercício 2)
+	
+//	double num_nc;
+	
+	//printf("\nDigite um numero inteiro para converte-lo em notacao cientifica: ");
+//	scanf("%f", &num_nc);
+	
+	
+	// Exercício 3) 
+	
+	//int bit1, bit2, bit3, bit4, valor_do_bin;
+	//printf("Digite o valor de um numero para converte=lo em binario: ");
+	//scanf("%d", &valor_do_bin);
+	
+	// Exercício 4)
+	
+	float salario_fixo, valor_vendas, comissao, valor_total;
+	
+	printf("Quanto voce recebe de salario fixo?: ");
+	scanf("%f", &salario_fixo);
+	printf("E qual foi o valor total das vendas?: ");
+	scanf("%f", &valor_vendas);
+	
+	comissao = 0.15 * valor_vendas;
+	valor_total = salario_fixo + valor_vendas + comissao;
+	
+	printf("O valor total que voce ira receber e: %.2f", valor_total);
+	
+	// Exercício 5)
+	
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}
