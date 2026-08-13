@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <math.h>
+#define pi 3.14	
+
+// Calcular a area do circulo. Definido como area = pi * pow(raio, 2)
+
+
+int main() {
+
+/*
+   float raio, area;
+   
+   printf("Digite o valor do raio: ");
+   scanf("%f", &raio);
+   
+   area = M_PI * pow(raio, 2);
+   
+   printf("area do circulo: %.2f" , area );
+   
+    */
+    
+   //Calcular a area do triangulo retangulo 
+   
+    /* float area_triangulo, base, altura;
+    
+    printf("Digite o valor da base: ");
+    scanf("%f", &base);
+    
+    printf("Digite o valor da altura: ");
+    scanf("%f", &altura);
+    
+    area_triangulo = base * altura / 2;
+    
+    printf("A area do triangulo retangulo: %.2f", area_triangulo);
+    
+    
+    
+    return 0;
+    */
+}
