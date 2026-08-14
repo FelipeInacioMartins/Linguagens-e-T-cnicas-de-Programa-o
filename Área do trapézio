@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* Calcular area do trapezio */
+
+int main(int argc, char *argv[]) {
+	
+	float base_maior, base_menor, altura, area;
+	
+	printf("\nCalculo da area do trapezio");
+	
+	printf("\n Digite o valor da base maior: ");
+	scanf("%f", &base_maior);
+	
+	printf("\n Digite o valor da base menor: ");
+	scanf("%f", &base_menor);
+	
+	printf("\n Digite o valor da altura: ");
+	scanf("%f", &altura);
+	
+	area = (base_maior + base_menor) * altura / 2; 
+	
+	printf("O valor da area: %.2f", area);
+	return 0;
+}
