@@ -20,7 +20,6 @@ Durante o desenvolvimento deste repositório, serão abordados conceitos como:
 * Procedimentos
 * Ponteiros
 * Strings
-* Estruturas de dados
 * Algoritmos
 * Boas práticas de programação
 
