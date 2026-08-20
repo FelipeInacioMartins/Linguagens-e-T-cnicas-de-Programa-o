@@ -6,33 +6,31 @@ int main(int argc, char *argv[]) {
 	
 	int n1, n2, aux;
 	
-	// Exercício 1) 
+	// Exercício 1 Lista 1 )  Faça um programa que leia dois números inteiros e depois os imprima na ordem inversa em que eles foram lidos
 	
-	printf("Digite um numero inteiro: ");
+/*	printf("Digite um numero inteiro: ");
 	scanf("%d", &n1);
 	printf("Digite outro numero inteiro: ");
 	scanf("%d", &n2);
 	
 	aux = n1; // Trocar valores na memória. Variável auxiliar para não perder o valor. ordenação
 	n1 = n2; 
-	n2 = aux;
-	
+	n2 = aux;	
 	
 	printf("Os numeros inteiros na ordem inversa e: %d e %d", n1, n2);
+*/
 	
-	//  Exercício 2)
+	//  Exercício 2 Lista 1) Faça um programa que leia um valor do tipo double e depois o imprima na forma de notação científica.
 	
-	double num_nc;
+/*	double num_nc;
 	
 	printf("\nDigite um numero inteiro para converte-lo em notacao cientifica: ");
 	scanf("%f", &num_nc);
 	
-	
-	// Exercício 3) 
-		/* 3) Implemente um programa que leia um número n [com n positivo & n <= 64] e mostre na tela o seu
-valor em base binária (bits). */
-
-int main(int argc, char *argv[]) {
+*/	
+	// Exercício 3 Lista 1)  Implemente um programa que leia um número n [com n positivo & n <= 64] e mostre na tela o seu valor em base binária (bits). 
+/*
+	int main(int argc, char *argv[]) {
 		
 	int n, resultado, bit_64, bit_32, bit_16, bit_8, bit_4, bit_2;
 	
@@ -60,10 +58,10 @@ int main(int argc, char *argv[]) {
 
 	printf("O resultado da conversao %d em binario eh = %d%d%d%d%d%d%d", n, resultado%2, bit_2, bit_4, bit_8, bit_16, bit_32, bit_64);
 
-
-	// Exercício 4)
+*/
+	// Exercício 4 Lista 1)
 	
-	float salario_fixo, valor_vendas, comissao, valor_total;
+/*	float salario_fixo, valor_vendas, comissao, valor_total;
 	
 	printf("Quanto voce recebe de salario fixo?: ");
 	scanf("%f", &salario_fixo);
@@ -74,10 +72,50 @@ int main(int argc, char *argv[]) {
 	valor_total = salario_fixo + valor_vendas + comissao;
 	
 	printf("O valor total que voce ira receber e: %.2f", valor_total);
+*/	
+	// Exercício 5 Lista 1) Elabore um programa que peça ao usuário para digitar 4 valores. E mostre na tela a soma, a média e o produtório desses valores[System Promp
 	
-	// Exercício 8)
+		float a,b,c,d, media;
+		int soma, produto;
+		
+		
+		printf("Insira o primeiro valor: ");
+		scanf("%f", &a);
+		
+		printf("Insira o segundo valor: ");
+		scanf("%f", &b);
+		
+		printf("Insira o terceiro valor: ");
+		scanf("%f", &c);
+		
+		printf("Insira o quarto valor: ");
+		scanf("%f", &d);
+		
+		soma = a+b+c+d;
+		media = (a+b+c+d)/4;
+		produto = a*b*c*d;
+		
+		printf("A soma %d, A media %.2f e o produtorio %d dos valores inseridos.", soma, media, produto);
+		
+		// Exercicio 6 - Lista 1) 
+		
+		int a, antecessor, sucessor;
+		
+		printf("Insira um numero para receber o seu antecessor e seu sucessor: ");
+		scanf("%d", &a);
+		
+		antecessor = a - 1;
+		sucessor = a + 2;
+		
+		printf("O antecessor de %d eh %d e o seu sucessor eh %d.", a, antecessor, sucessor);
+		
+		
+		
+		
+		
+	// Exercício 8 Lista 1)
 
-		float x1, x2, y1, y2, dist, p1, p2;
+/*		float x1, x2, y1, y2, dist, p1, p2;
 		
 		printf("Insira as coordenadas do ponto P1: ");
 		scanf("%f %f", &x1, &y1);
@@ -91,6 +129,25 @@ int main(int argc, char *argv[]) {
 		dist = sqrt(p1+p2);
 		
 		printf("Distancia (%.2f)", dist);
+*/	
+		
+	// Exercício 10 Lista 2) 
+	
+/*	int a, b, c, d, maior, maior_temp1, maior_temp2;
+		
+		printf("Informe os valores a serem comparados: ");
+		scanf("%d %d %d %d", &a, &b, &c, &d);
+		
+		// conta - recursividade em C
+		
+		maior_temp1 = (a+b+abs(a-b))/2;
+		maior_temp2 = (maior_temp1+c+abs(maior_temp1-c))/2;
+		maior = (maior_temp2+d+abs(maior_temp2-d))/2;
+		
+		
+		printf("O maior entre |%d|%d|%d|%d| = %d", a,b,c,d, maior);
+*/
+		
 	
 	return 0;
 }
