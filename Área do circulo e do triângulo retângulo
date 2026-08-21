@@ -29,7 +29,6 @@
 	area_triangulo = (base * altura)/2;
 	
 	printf("\nO valor da area do triangulo retangulo eh: %f", area_triangulo);
-	
-	
+
 	return 0;
 }
