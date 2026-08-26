@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* AULA - Estruturas condicionais. 26/08/2026 */
+
+int main(int argc, char *argv[]) {
+	
+	int a, b, c, r;
+/*	
+	a = 10;
+	b = 1;
+	c = 0;
+	
+	r = a == b; // r recebe a, e a é igual a b?
+	
+	printf("%d", r);	
+	
+
+	printf("Entre com os valores para A B C:");
+	scanf("%d %d %d", &a, &b, &c);
+	
+	if(a>b){
+		r = a;
+		
+	}
+	if(b>a){
+		r = b;
+		
+	}
+	if (r>c){
+		r = r;
+	}
+	if (c>r){
+		r = c;
+	}
+	printf("%d eh maior ");
+*/
+	
+	// Aplicando IF e ELSE
+	fflush(stdin);
+	printf("Entre com os valores para A B C :");
+	scanf("%d %d %d", &a, &b, &c);
+	
+	if(a > b)r = a;	else r = b;	
+	if (c>r){
+		r = c;
+	}
+	printf("%d eh maior ", r);
+
+		
+	
+
+	int n;
+	printf("\nInsira um numero:");
+	scanf("%d", &n);
+	if(n%2 == 0) printf("par"); else printf("impar");
+				
+	
+/* Este bloco de condição se chama Cláusula:
+
+	if (condicao) {
+		# bloco se condicao for verdadeira;
+	}
+*/			
+	
+	return 0;
+}
