@@ -22,11 +22,12 @@
 	
 	//  Exercício 2 - Lista 1) Faça um programa que leia um valor do tipo double e depois o imprima na forma de notação científica.
 	
-		double num_nc;
-		
-		printf("\nDigite um numero inteiro para converte-lo em notacao cientifica: ");
-		scanf("%f", &num_nc);
-		// Fazendo ainda!
+		double numero;
+
+		printf("Digite um numero: ");
+		scanf("%lf", &numero);
+	
+		printf("Em notacao cientifica: %e\n", numero);
 	
 	// Exercício 3 - Lista 1)  Implemente um programa que leia um número n [com n positivo & n <= 64] e mostre na tela o seu valor em base binária (bits). 
 
