@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Aprendendo Structs 
+
+// declaracao da estrutura
+typedef struct{
+	
+	double l; // Largura
+	double h; // Altura
+	double c; // Comprimento
+	double d; // Densidade
+	
+	
+	
+} Paralelepipedo;
+
+// Prototipos das funcoes
+void calcularArea(Paralelepipedo p);
+void calcularVolume(Paralelepipedo p);
+void calcularMassa(Paralelepipedo p);
+
+
+
+
+int main(int argc, char *argv[]){
+	
+	// variáveis
+	Paralelepipedo p;
+	
+	// entradas
+	printf("Digite a largura do Paralelepipedo:\n ");
+	scanf("%lf", &p.l);
+	printf("Digite a altura do Paralelepipedo:\n ");
+	scanf("%lf", &p.h);
+	printf("Digite o comprimento do Paralelepipedo:\n ");
+	scanf("%lf", &p.c);
+	printf("Digite a densidade do Paralelepipedo:\n ");
+	scanf("%lf", &p.d);
+	
+	// Exibe na tela os dados
+	printf("Dados do Paralelepipedo: l: %f h: %f c: %f d: %f", p.l, p.h, p.c, p.d);
+	
+	// Chamada das funcoes
+	calcularArea(p);
+	calcularVolume(p);
+	calcularMassa(p);
+	
+	return 0;
+}
+
+// Declaracao das funcoes
+void calcularArea(Paralelepipedo p){
+	
+	double area = 2*p.l*p.c + 2*p.l*p.h + 2*p.c*p.h;
+	printf("Area: %lf", area);
+	
+}
+
+void calcularVolumer(Paralelepipedo p){
+	
+	double volume = p.l * p.c * p.h;
+	printf("Volume: %lf", volume);
+	
+}
+
+void calcularMassa(Paralelepipedo p){
+	
+	double volume = p.l * p.c * p.h;
+	double massa = p.d * volume;
+	printf("Massa: %lf", massa);   
+	
+}
