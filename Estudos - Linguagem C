@@ -57,7 +57,7 @@ void calcularArea(Paralelepipedo p){
 	
 }
 
-void calcularVolumer(Paralelepipedo p){
+void calcularVolume(Paralelepipedo p){
 	
 	double volume = p.l * p.c * p.h;
 	printf("Volume: %lf", volume);
