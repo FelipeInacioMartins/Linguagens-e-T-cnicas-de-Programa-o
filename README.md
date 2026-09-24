@@ -44,24 +44,6 @@ Os exercícios e projetos têm como objetivo desenvolver habilidades como:
 * Manipulação de dados
 * Análise e correção de erros
 
-## 📂 Organização
-
-O repositório será organizado de acordo com os conteúdos estudados, facilitando a consulta e o acompanhamento da minha evolução.
-
-```text
-Linguagens-e-Tecnicas-de-Programacao/
-│
-├── README.md
-│
-├── 01-Introducao/
-├── 02-Variaveis-e-Tipos/
-├── 03-Entrada-e-Saida/
-├── 04-Condicionais/
-├── 05-Repeticao/
-├── 06-Vetores/
-├── 07-Matrizes/
-├── 08-Funcoes/
-└── 09-Projetos/
 ```
 
 ## 🎯 Objetivo
