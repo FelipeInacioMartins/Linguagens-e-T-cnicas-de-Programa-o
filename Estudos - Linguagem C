@@ -29,17 +29,17 @@ int main(int argc, char *argv[]){
 	Paralelepipedo p;
 	
 	// entradas
-	printf("Digite a largura do Paralelepipedo:\n ");
+	printf("Digite a largura do Paralelepipedo(m):\n ");
 	scanf("%lf", &p.l);
-	printf("Digite a altura do Paralelepipedo:\n ");
+	printf("Digite a altura do Paralelepipedo(m):\n ");
 	scanf("%lf", &p.h);
-	printf("Digite o comprimento do Paralelepipedo:\n ");
+	printf("Digite o comprimento do Paralelepipedo(m):\n ");
 	scanf("%lf", &p.c);
-	printf("Digite a densidade do Paralelepipedo:\n ");
+	printf("Digite a densidade do Paralelepipedo(kg/m3):\n ");
 	scanf("%lf", &p.d);
 	
 	// Exibe na tela os dados
-	printf("Dados do Paralelepipedo: l: %f h: %f c: %f d: %f", p.l, p.h, p.c, p.d);
+	printf("Dados do Paralelepipedo: l: %f h: %f c: %f d: %f\n", p.l, p.h, p.c, p.d);
 	
 	// Chamada das funcoes
 	calcularArea(p);
@@ -53,14 +53,14 @@ int main(int argc, char *argv[]){
 void calcularArea(Paralelepipedo p){
 	
 	double area = 2*p.l*p.c + 2*p.l*p.h + 2*p.c*p.h;
-	printf("Area: %lf", area);
+	printf("Area: %lfm2\n", area);
 	
 }
 
 void calcularVolume(Paralelepipedo p){
 	
 	double volume = p.l * p.c * p.h;
-	printf("Volume: %lf", volume);
+	printf("Volume: %lfm3\n", volume);
 	
 }
 
@@ -68,6 +68,6 @@ void calcularMassa(Paralelepipedo p){
 	
 	double volume = p.l * p.c * p.h;
 	double massa = p.d * volume;
-	printf("Massa: %lf", massa);   
+	printf("Massa: %lfkg\n", massa);   
 	
 }
