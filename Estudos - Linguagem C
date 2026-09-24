@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Aprendendo Structs 
+/* Aprendendo Structs - Elaborar um programa que inicializa uma variavel do tipo Paralelepipedo,
+   receba do usuario os valores dos membros e possui tres funcoes que recebem a variavel comoo
+   parametro. */ 
 
 // declaracao da estrutura
 typedef struct{
