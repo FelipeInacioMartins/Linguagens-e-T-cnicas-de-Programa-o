@@ -1,0 +1,47 @@
+/* Faça um programa que selecione ao usuário um número de 0 a 100 e solicite que o
+   Usuário tente adivinhar este valor.
+   Em cada tentativa será informado se o usuário está acima ou abaixo deste valor.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+//Protótipos
+void selecionarValor();
+void obterInformacao();
+int testarResultado();
+
+//Variáveis
+short selecionado;
+short valorDigitado;
+
+int main(){
+	selecionarValor();
+	return 0;
+}
+
+void selecionarValor(){
+	srand(time(NULL)); // Semente. Gera um numero aleatório. O time tem um valor nulo
+	selecionado = rand() % 101; // um numero aleatorio entre 0 a 100
+	do {
+		obterInformacao();
+	} while (testarResultado());
+	puts("Parabens! Voce acertou o valor!");
+}
+
+void obterInformacao(){
+	puts("Informe um valor entre 0 a 100: ");
+	scanf("%hd", &valorDigitado);
+}
+
+
+int testarResultado(){
+	
+	if (selecionado > valorDigitado) {
+		puts("Valor muito baixo, tente novamente!");
+	} else if (selecionado < valorDigitado){
+		puts("Valor muito alto, tente novamente!");
+	}
+	return selecionado != valorDigitado;
+}
