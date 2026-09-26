@@ -7,6 +7,7 @@ int  - 4 bytes   - 32 bits
 long - 8 bytes   - 64 bits */
 
 
+// Chamando as funções
 void executar();
 void entradaDeValor();
 float calcular();
@@ -15,25 +16,30 @@ void saidaDeValor(float resultado);
 int val1, val2;
 float val3;
 
+// Função principal chamando a função executar
 int main (){	
 	executar();	
 	return 0;
 }
 
+//Função executar chamando as funções entradaDeValor e saidaDeValor
 void executar(){	
 	entradaDeValor();
 	saidaDeValor(calcular());
 }
 
+//Função da entradaDeValor. Apenas recebe os valores do usuário 
 void entradaDeValor(){	
 	puts("Entre com os valores: ");
 	scanf("%d %d %f", &val1, &val2, &val3);	
 }
 
+//Função que calcula os valores
 float calcular(){
 	return val1 * val2 * val3 / 100;
 }
 
+//Função que mostra o resultado para o usuário
 void saidaDeValor(float resultado){
 	
 	printf("O resultado eh: %.2f\n", resultado);	
