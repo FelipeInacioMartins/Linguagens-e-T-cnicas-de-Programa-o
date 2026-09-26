@@ -17,7 +17,7 @@ void saidaDeValor(float resultado);
 int val1, val2;
 float val3;
 
-// Função principal chamando a função executar
+//Função principal chamando a função executar
 int main (){	
 	executar();	
 	return 0;
