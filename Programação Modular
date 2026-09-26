@@ -7,7 +7,7 @@ int  - 4 bytes   - 32 bits
 long - 8 bytes   - 64 bits */
 
 
-// Chamando as funções
+// Protótipos das funções que serão utilizadas
 void executar();
 void entradaDeValor();
 float calcular();
