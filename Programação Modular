@@ -13,6 +13,7 @@ void entradaDeValor();
 float calcular();
 void saidaDeValor(float resultado);
 
+//Variáveis que serão usadas
 int val1, val2;
 float val3;
 
