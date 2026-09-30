@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Correção da prova - AULA 1 30/09/2026
+// Questão 1)
+int main(int argc, char *argv[]) {
+	
+	int Qtd_tot, capx, n_mochilas;
+	
+	printf("Insira a quantidade e a capacidade: ");
+	scanf("%d %d", &Qtd_tot, &capx);
+	n_mochilas = Qtd_tot / capx;
+	printf("Voce precisa de %d mochilas", n_mochilas);
+	
+	return 0;
+}
