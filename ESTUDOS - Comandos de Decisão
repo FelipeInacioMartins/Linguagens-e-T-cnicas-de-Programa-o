@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+void desvio1();
+void desvio2();
+
+
+int main(){
+	
+	desvio1();
+	desvio2();
+		
+	return 0;
+}
+// Comando IF
+void desvio1(){
+	short idade;
+	puts("Entre com sua idade: ");
+	scanf("%hd", &idade);
+	if (idade > 18) { // > < >= <= != == "&&" E Lógico "||"  OU Lógico
+		puts("Voce chegou na vida adulta");
+	}else {
+		puts("Aproveite a sua vida como menor de idade!");
+	}
+	
+
+	
+}
+// Comando SWITCH
+void desvio2(){
+	
+	short codigo;
+	puts("Informe o codigo: ");
+	scanf("%hd", &codigo);
+	
+	switch (codigo){
+		case 1: case 2: puts("Como vai?"); break;
+		case 3: puts("Ola mundo!"); break;
+		case 4: puts("Estou bem!"); break;
+		default: puts("Ate logo!"); break; /*Comando semelhante ao "else", mas não necessariamente 
+											precisa ser utilizado como o  último*/
+	}
+	
+}
