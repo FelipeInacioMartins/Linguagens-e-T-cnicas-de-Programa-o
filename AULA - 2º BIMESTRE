@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* AULA 14/10/2026. FOR / DO / WHILE 
+	Exercício:  */
+
+int main(int argc, char *argv[]) {
+	
+	int numero, i, soma;
+	
+	i = 0;
+	soma = 0;
+	while(i < 10){
+		printf("Digite um valor inteiro positivo: ");
+		scanf("%d", &numero);
+		if(numero > 0){
+			soma += numero;
+			i++;
+		}
+	}
+	printf("soma = %d e media = %d", soma, (soma/10));
+	
+	
+	
+	/*
+	int valor[10], i, cont;
+	
+	for (i=0; i<10; i++){
+		scanf("%d", &valor[i]);
+	}
+	
+	i = 10;
+	while(i < 10){
+		scanf("%d", %valor[i]);
+		i++;
+	}
+	
+	
+	printf("Insira um valor par:  ");
+	scanf("%d", &valor);
+	while (valor%2 == 1){
+	 	printf("valor inserido eh impar. \n Insira um novo valor: ");
+	 	scanf("%d", &valor);
+	}
+	
+	do {
+		printf("Insira um valor par:  ");
+		scanf("%d", &valor);
+	} while (valor%2== 1);
+	 printf("a raiz de %d = %f", valor, sqrt(valor));
+	*/
+	
+	return 0;
+}
