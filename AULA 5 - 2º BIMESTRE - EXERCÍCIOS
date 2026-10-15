@@ -73,7 +73,7 @@ n primeiros termos da sequência definida
 [S = 1/2; 1/4; 1/8; 1/16... N] */
 int n;
 float soma; 
-printf("Digite um numero: ");
+printf("\nDigite um numero: ");
 scanf("%d", &n);
 
 
