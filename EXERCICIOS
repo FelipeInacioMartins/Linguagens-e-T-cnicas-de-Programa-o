@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+// Exercicios para praticar
+
+int main(){
+	
+	int i, j, n_linhas;
+	int pascal[20][20] = {0};
+	
+	printf("Digite o numero de linhas: ");
+	scanf("%d", &n_linhas);
+	
+	
+		for (int i = 0; i < n_linhas; i++){
+			pascal[i][0] = 1;
+			pascal[i][i] = 1;
+			for (int j = 1; j < i; j++){
+				pascal[i][j] = pascal[i-1][j-1] + pascal[i-1][j];
+				
+			}
+		}
+		
+		for (int i = 0; i < n_linhas; i++){
+			for (int j = 0; j <= i; j++){
+				printf("%d ", pascal[i][j]);
+			}
+			printf("\n");
+		}
+	
+	return 0;
+}
+
+
+
