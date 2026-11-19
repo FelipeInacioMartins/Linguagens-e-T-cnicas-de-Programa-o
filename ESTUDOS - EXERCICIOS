@@ -1,34 +1,108 @@
 #include <stdio.h>
 
-// Exercicios para praticar
-
 int main(){
 	
+	/* Exercicio 1) Faca o triangulo de Pascal conforme a saida esperada:
+	   1
+	  11
+	 121
+	1331
+   14641
+  15101051
+	   
+	*/ 
+	int pascal[20][20] = {0}; // inicializa todos os enderecos das variaveis em zero
 	int i, j, n_linhas;
-	int pascal[20][20] = {0};
 	
-	printf("Digite o numero de linhas: ");
+	printf("Digite a quantidade de linhas: ");
 	scanf("%d", &n_linhas);
 	
+	while(n_linhas > 20 || n_linhas < 1){
+	printf("\nOpa! Quantidade invalida!");
+	printf("\nDigite um valor entre 1 a 20: ");
+	scanf("%d", &n_linhas);
+	}
 	
-		for (int i = 0; i < n_linhas; i++){
-			pascal[i][0] = 1;
-			pascal[i][i] = 1;
-			for (int j = 1; j < i; j++){
-				pascal[i][j] = pascal[i-1][j-1] + pascal[i-1][j];
-				
-			}
+	for (i = 0; i < n_linhas; i++){
+		pascal[i][i] = 1;
+		pascal[i][0] = 1;
+		for (j = 1; j < i; j++){
+			pascal[i][j] = pascal[i-1][j-1] + pascal[i-1][j];
 		}
-		
-		for (int i = 0; i < n_linhas; i++){
-			for (int j = 0; j <= i; j++){
-				printf("%d ", pascal[i][j]);
-			}
-			printf("\n");
+	}
+	
+	for (i = 0; i < n_linhas; i++){
+		for (j = 0; j <= i; j++){
+			printf(" %d ",pascal[i][j]);
 		}
+		printf("\n");
+	} 
+	
+	/* Exercicio 2)
+	 Leia a quantidade de termos (N), 
+	 o primeiro termo (A1) e a razão (R) 
+	 de uma Progressão Geométrica. Armazene 
+	 todos os termos em um vetor.	
+	*/
+	
+ 	int  N_PG, A1_PG, R_PG, PG[20];
+ 	
+ 	printf("\nDigite a quantidade de termos: ");
+ 	scanf("%d", &N_PG);
+ 	
+ 	while ( N_PG > 20 || N_PG < 1){
+ 		printf("\nOps! quantidade incorreta.");
+		printf("\nDigite um valor entre 1 a 20: ");
+ 		scanf("%d", &N_PG);
+	 }
+ 	
+ 	printf("\nDigite o primeiro termo: ");
+ 	scanf("%d", &A1_PG);
+ 	
+ 	printf("\nDigite o valor da razao: ");
+ 	scanf("%d", &R_PG);
+ 	
+ 	PG[0] = A1_PG;
+ 	
+ 	for (i = 1; i < N_PG; i++){
+ 		PG[i] = PG[i - 1] * R_PG;
+	 }
+	 for (i = 0; i < N_PG; i++){
+	 	printf(" %d ->  ", PG[i]);
+	 	
+	 }
+	 
+	 
+	 /* Exercicio 3) Progressao aritmetica (PA)
+	 			Faca a mesma coisa que o outro exercicio, porem usando PA.
+			ex: 2, 5, 8, 11, 14..
+	 */
+	 int PA[20], R_PA, N_PA, A1_PA;
+	 
+	 printf("\nDigite a quantidade de termos: ");
+	 scanf("%d", &N_PA);
+	 
+	 while (N_PA > 20 || N_PA < 1){
+	 	printf("\nOpa! Quantidade invalida!");
+	 	printf("\nDigite um valor entre 1 a 20: ");
+	 	scanf("%d", &N_PA);
+	 }
+	 
+	 printf("\nDigite o valor de A1: ");
+	 scanf("%d", &A1_PA);
+	 
+	 printf("\nDigite o valor de R (Razao): ");
+	 scanf("%d", &R_PA);
+	 
+	 PA[0] = A1_PA;
+	 
+	 for (i = 1; i < N_PA; i++){
+	 	PA[i] = PA[i-1] + R_PA;
+	 }
+	 for (i = 0; i < N_PA; i++){
+	 	printf(" %d -> ", PA[i]);
+	 }
+	 
 	
 	return 0;
 }
-
-
-
