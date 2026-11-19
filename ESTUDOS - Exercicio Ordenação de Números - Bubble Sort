@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main(){
+	
+	int numeros[10];
+	int i, j, aux;
+	
+	for (i = 0; i < 10; i++){
+		printf("Digite o %d. numero: ", i + 1);
+		scanf("%d", &numeros[i]);
+	}	
+	
+	for (i = 0; i < 9; i++){
+		for (j = 0; j < 9-i; j++){
+			if (numeros[j] > numeros[j+1]){
+				aux = numeros[j];
+				numeros[j] = numeros[j+1];
+				numeros[j+1] = aux;
+			}
+		}
+	}
+	
+	printf("Os numeros digitados em ordem crescente: ");
+	
+	for (i = 0; i < 10; i++){
+		printf("%d.. ", numeros[i]);
+	}
+	
+	for (i = 0; i < 9; i++){
+		for(j = 0; j < 9 - i; j++){
+			if (numeros[j] < numeros[j+1]){
+				aux = numeros[j+1];
+				numeros[j+1] = numeros[j];
+				numeros[j] = aux;
+			}
+		}
+	}
+		printf("\nNumeros digitados em ordem decrescente: ");
+		for(i = 0; i < 10; i++){
+			printf("%d.. ", numeros[i]);
+		}
+	
+	return 0; 
+}
