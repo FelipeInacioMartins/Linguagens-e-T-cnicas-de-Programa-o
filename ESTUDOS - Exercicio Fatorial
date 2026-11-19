@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main(){
+	
+	/* Exercicio - Fatorial de um numero
+	 0! = 1
+	 5! = 120 = 5 x 4 x 3 x 2 x 1
+	*/
+	
+	long long int totFatorial;
+	int i, n;
+	
+	printf("Digite um numero positivo ou igual a zero: ");
+	scanf("%d", &n);
+	
+	while (n < 0){
+		printf("\nCe nao entendeu? apenas numeros positivos maiores ou iguais a zero");
+		printf("\nDigite novamente: ");
+		scanf("%d", &n);
+	}
+	
+	totFatorial = 1;
+	
+	for (i = n; i >= 1; i--){
+		totFatorial = i * totFatorial;
+	}
+	printf("%d! = %lld", n, totFatorial);
+	
+	
+	
+	
+	
+	return 0;
+}
