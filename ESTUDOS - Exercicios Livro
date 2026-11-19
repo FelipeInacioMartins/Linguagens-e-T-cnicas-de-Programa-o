@@ -1,0 +1,25 @@
+#include <stdio.h>
+// Faca um programa que identifique se um ano eh bissexto ou nao.
+int main(){
+	
+	int ano;
+	
+	printf("Digite um ano d.C (depois de Cristo): ");
+	scanf("%d", &ano);
+	while (ano < 0){
+		printf("Ops! Ano invalido.");
+		printf("\nDigite um ano d.C (depois de Cristo): ");
+		scanf("%d", &ano);		
+	}
+	
+	if (ano % 400 == 0){
+		printf("Esse ano eh bissexto!");
+	} else if (ano % 4 == 0 && ano % 100 != 0){
+			printf("Esse ano eh bissexto!");
+		} else {
+			printf("Esse ano nao eh um ano bissexto!");
+		}	
+	
+	
+	return 0;
+}
